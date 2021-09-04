@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Faculty Login</title>
+</head>
+<body id="bg" style="background-color :powderblue;">
+    <br>
+                <h1 style="background-color:tomato;"><center>College Management System</center></h1>
+                
+                <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <form action="http://127.0.0.1:8000/faculty/add/" method="post">
+                    <table class="table table-borderless">
+                        <h2>
+                            <center>Faculty Registration</center>
+                        </h2>
+                        <tr>
+                            <td>Fcode</td>
+                            <td><input name ="fcode" type="number" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td >Password</td>
+                            <td><input type="password" name="password" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Department</td>
+                            <td><input type="text" name="dept" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type="text" name="address" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td >Mobile number</td>
+                            <td><input type="number" name="mobno" class="form-control"></td>
+                        </tr>
+                       
+                        <tr>
+                            <td></td>
+                            <td><center><button class="btn btn-success">Register</button></center></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                
+    
+    <form action="http://127.0.0.1:8000/faculty/login_check/" method="post">
+                <table class="table table-borderless">
+                    <h2>
+                        <center>Faculty Login</center>
+                    </h2>
+                    <tr>
+                        <td>Faculty Code</td>
+                        <td><input type="number" name="fcode" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><center><button class="btn btn-dark">Login</button></center></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</form>
+<a href="http://127.0.0.1:8000/faculty/home/"><button class="btn btn-secondary">Back to Home </button></a>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
