@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-image: url('https://citytoday.news/wp-content/uploads/2019/07/od-bank.jpg');
+        background-size:cover;
+      }
+      </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Blood Bank Management System</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/bloodbank/home/">Blood Bank Management System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a href="http://127.0.0.1:8000/bloodbank/home/"><button class="btn btn-outline-light">Home Page</button></a>
+              
+              <a class="nav-link" href="http://127.0.0.1:8000/bloodbank/view/">View Profile</a>
+              <a class="nav-link" href="http://127.0.0.1:8000/bloodbank/updatedonor/">Update Profile</a>
+              <a class="nav-link" href="http://127.0.0.1:8000/bloodbank/home/">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {% if request.session.uname %}
+      <h2>Welcome {{request.session.uname}}</h2>
+      {% endif %}
+{%  block myContent %}
+
+
+{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

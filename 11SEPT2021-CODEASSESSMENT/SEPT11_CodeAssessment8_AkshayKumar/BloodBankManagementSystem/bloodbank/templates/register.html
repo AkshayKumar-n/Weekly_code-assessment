@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Registration</title>
+</head>
+
+<body id="bg" style="background-color :powderblue;">
+    <br>
+                <h1 style="background-color:tomato;"><center>Donors Sign Up</center></h1>
+                
+                <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+                
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <form action="http://127.0.0.1:8000/bloodbank/add/" method="post">
+                <table class="table table-borderless">
+                    
+                    <tr>
+                        <td>Name</td>
+                        <td><input class="form-control" type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input class="form-control" name="address" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Blood Group</td>
+                        <td> <select class='form-control' name="bgroup" id="">
+                            <option value="A+" >A+</option>
+                            <option value="A-" >A-</option>
+                            <option value="B+" >B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+" >O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+" >AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile number</td>
+                        <td><input class="form-control" type="number" name="mobno"></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td><input name="username" class="form-control" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input name="password" class="form-control" type="password"></td>
+                    </tr>
+                   
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-success">Register</button></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+            <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+        </div>
+    </div>
+
+    <a href="http://127.0.0.1:8000/bloodbank/home/"><button class="btn btn-secondary">Back to Home </button></a>
+    
+</body>
+</html>
